@@ -253,6 +253,7 @@ public class Notification extends CordovaPlugin {
 
                 dlg.create();
                 AlertDialog dialog =  dlg.show();
+                dialog.setCanceledOnTouchOutside(false);
                 TextView messageview = (TextView)dialog.findViewById(android.R.id.message);
                 messageview.setTextDirection(android.view.View.TEXT_DIRECTION_LOCALE);
             };
